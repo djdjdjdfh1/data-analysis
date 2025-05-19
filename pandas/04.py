@@ -20,8 +20,8 @@ df.index.name = '지원번호'
 df.to_csv('score.csv', encoding='utf-8-sig')
 df.to_csv('score.csv', encoding='utf-8-sig', index=False)
 
-df.to_csv('score.txt', sep='\t')
-# df.to_excel('score.xlsx')
+df.to_csv('score.txt', sep='\t') # tab 으로 구분된 텍스트 파일
+df.to_excel('score.xlsx')
 
 # 열기
 df = pd.read_csv('score.csv')
