@@ -13,3 +13,4 @@ print(df.loc[df['개봉 연도'] >= 2015, ['영화', '개봉 연도']])
 df['추천 점수'] = (df['관객 수'] + df['평점']) // 100
 print(df)
 print(df.sort_values('개봉 연도', ascending=False))
+print(df.sort_values('추천 점수', ascending=False))
